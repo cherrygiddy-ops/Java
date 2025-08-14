@@ -1,12 +1,10 @@
 
-import MortageCalculator.Console;
-import MortageCalculator.MortgageCalculator;
-import MortageCalculator.PrintMortgageReport;
-import learning.CheckBox;
+import exceptions.Account;
+import exceptions.ExceptionDemo;
+import exceptions.InsuficientFundsException;
 import learning.TextBox;
 import learning.UIControl;
 import taxCalculator.TaxCalculator2018;
-import taxCalculator.TaxCalculator2019;
 import taxCalculator.TaxReport;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -15,10 +13,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        var calculator = new TaxCalculator2018(2000);
-     var report = new TaxReport(calculator);
-     report.printTax();
-}
+       var account = new Account();
+        try {
+            account.withdraw(50);
+        } catch (InsuficientFundsException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 
 public static void  show(UIControl control){
     TextBox textbox;
