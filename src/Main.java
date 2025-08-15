@@ -1,7 +1,7 @@
 
 import Generics.GenericList;
 import Generics.Instructor;
-import Generics.User;
+import Collections.SetsCollection;
 import Generics.Utils;
 import exceptions.Account;
 import exceptions.ExceptionDemo;
@@ -11,13 +11,27 @@ import learning.UIControl;
 import taxCalculator.TaxCalculator2018;
 import taxCalculator.TaxReport;
 
+import java.util.*;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
     public static void main(String[] args) {
-       var list = new GenericList<Instructor>();
-        Utils.printUsers(list);
+
+        var set = new SetsCollection();
+        //set.getUnions();
+        //set.getDifference();
+        set.getCommonItems();
+
+
+
+
+//       list.toArray(new Integer[0]);
+//        Set<Integer> set = new HashSet<>(list);
+//        int [] items = new int[5];
+//       var stream= Arrays.stream(items);
+//        System.out.println(set);
     }
 
 public static void  show(UIControl control){
