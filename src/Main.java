@@ -1,4 +1,8 @@
 
+import Generics.GenericList;
+import Generics.Instructor;
+import Generics.User;
+import Generics.Utils;
 import exceptions.Account;
 import exceptions.ExceptionDemo;
 import exceptions.InsuficientFundsException;
@@ -12,13 +16,8 @@ import taxCalculator.TaxReport;
 public class Main {
 
     public static void main(String[] args) {
-
-       var account = new Account();
-        try {
-            account.withdraw(50);
-        } catch (InsuficientFundsException e) {
-            System.out.println(e.getMessage());
-        }
+       var list = new GenericList<Instructor>();
+        Utils.printUsers(list);
     }
 
 public static void  show(UIControl control){
