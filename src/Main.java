@@ -3,6 +3,7 @@ import Generics.GenericList;
 import Generics.Instructor;
 import Collections.SetsCollection;
 import Generics.Utils;
+import Lambdas.LambdasDemo;
 import exceptions.Account;
 import exceptions.ExceptionDemo;
 import exceptions.InsuficientFundsException;
@@ -19,10 +20,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        var set = new SetsCollection();
-        //set.getUnions();
-        //set.getDifference();
-        set.getCommonItems();
+        LambdasDemo.show();
 
 
 
