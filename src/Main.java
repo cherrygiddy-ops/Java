@@ -9,6 +9,7 @@ import exceptions.ExceptionDemo;
 import exceptions.InsuficientFundsException;
 import learning.TextBox;
 import learning.UIControl;
+import streams.StreamDemo;
 import taxCalculator.TaxCalculator2018;
 import taxCalculator.TaxReport;
 
@@ -20,7 +21,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LambdasDemo.show();
+        StreamDemo.show();
 
 
 
