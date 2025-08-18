@@ -48,6 +48,7 @@ public class StreamDemo {
     public static void getMax(){
        var movie= movies.stream()
                 .min(Comparator.comparingInt(Movie::getLikes))
+               //Optional means that min function may or  may not return a value
                 .get();
         System.out.println(movie);
 
